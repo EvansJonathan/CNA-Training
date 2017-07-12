@@ -10,3 +10,5 @@
 8. http://blog.checkpoint.com/2015/04/20/analyzing-magento-vulnerability/
 9. https://www.riskbasedsecurity.com/research/RBS-2016-004.pdf
 10. https://support.citrix.com/article/CTX138627
+11. https://blogs.gentoo.org/ago/2017/04/27/imageworsener-two-left-shift/
+12. http://dojo.bullguard.com/blog/burglar-hacker-when-a-physical-security-is-compromised-by-iot-vulnerabilities/
