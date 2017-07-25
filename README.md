@@ -1,18 +1,17 @@
 # CNA-Training
 
 ## Counting Examples
-1. https://labs.mwrinfosecurity.com/assets/991/original/mwri_amazon_fire_no_secure_usb_debugging.pdf
-2. https://www.openbugbounty.org/incidents/152371/
-3. http://www.openwall.com/lists/oss-security/2014/05/14/4
-4. https://www.senseofsecurity.com.au/sitecontnt/uploads/2015/03/SOS-11-003.pdf
-5. http://seclists.org/oss-sec/2014/q3/300
-6. https://www.exploit-db.com/exploits/17872/
-7. http://seclists.org/fulldisclosure/2015/Jul/120
-8. http://blog.checkpoint.com/2015/04/20/analyzing-magento-vulnerability/
-9. https://www.riskbasedsecurity.com/research/RBS-2016-004.pdf
-10. https://support.citrix.com/article/CTX138627
-11. https://blogs.gentoo.org/ago/2017/04/27/imageworsener-two-left-shift/
-12. http://dojo.bullguard.com/blog/burglar-hacker-when-a-physical-security-is-compromised-by-iot-vulnerabilities/
+1.  https://www.openbugbounty.org/incidents/152371/
+2.  http://www.openwall.com/lists/oss-security/2014/05/14/4
+3.  https://www.senseofsecurity.com.au/sitecontnt/uploads/2015/03/SOS-11-003.pdf
+4.  http://seclists.org/oss-sec/2014/q3/300
+5.  https://www.exploit-db.com/exploits/17872/
+6.  http://seclists.org/fulldisclosure/2015/Jul/120
+7.  http://blog.checkpoint.com/2015/04/20/analyzing-magento-vulnerability/
+8.  https://www.riskbasedsecurity.com/research/RBS-2016-004.pdf
+9.  https://support.citrix.com/article/CTX138627
+10. https://blogs.gentoo.org/ago/2017/04/27/imageworsener-two-left-shift/
+11. http://dojo.bullguard.com/blog/burglar-hacker-when-a-physical-security-is-compromised-by-iot-vulnerabilities/
 
 ## Entry Submission Examples
 1. http://www-01.ibm.com/support/docview.wss?uid=swg22002877
