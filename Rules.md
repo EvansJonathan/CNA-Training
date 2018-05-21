@@ -1,140 +1,99 @@
-## CVE Numbering Authorities (CNA) Rules
+CVE Numbering Authorities (CNA) Rules
+-------------------------------------
 
 [View as PDF](https://cve.mitre.org/cve/cna/CNA_Rules_v2.0.pdf)
 
-<div class="ltgreybackground" style="padding:2px 5px 2px 5px; font-size:90%; margin-bottom:20px; margin-top:20px; border-top:1px solid #dddddd; border-bottom:1px solid #dddddd; color:#333333"><span style="float:right">**Date:** January 1, 2018</span>**Document version:** 2.0</div>
+**Date:** January 1, 2018**Document version:** 2.0
 
 ### Table of Contents
 
-<div style="margin-left:20px; _margin-left:50px; list-style-type:none">
-
 1.  [Overview](#Section_1)
 
-<dl>
+1.1 [CVE Numbering Authorities (CNAs)](#Section_1_1_cnas)
 
-<dd>1.1 [CVE Numbering Authorities (CNAs)](#Section_1_1_cnas)</dd>
+1.2 [Federated CNA Structure](#Section_1_2_federated_structure)
 
-<dd>1.2 [Federated CNA Structure](#Section_1_2_federated_structure)</dd>
+1.3 [Purpose and Goal of the CNA Rules](#Section_1_3_purpose)
 
-<dd>1.3 [Purpose and Goal of the CNA Rules](#Section_1_3_purpose)</dd>
-
-<dd>1.4 [Document Structure](#Section_1_4_document_structure)</dd>
-
-</dl>
+1.4 [Document Structure](#Section_1_4_document_structure)
 
 3.  [Rules for All CNAs](#Section_2)
 
-<dl>
+2.1 [Assignment Rules](#Section_2_1_assignment_rules)
 
-<dd>2.1 [Assignment Rules](#Section_2_1_assignment_rules)</dd>
+2.2 [Communication Rules](#Section_2_2_communication_rules)
 
-<dd>2.2 [Communication Rules](#Section_2_2_communication_rules)</dd>
-
-<dd>2.3 [Administration Rules](#Section_2_3_administration_rules)</dd>
-
-</dl>
+2.3 [Administration Rules](#Section_2_3_administration_rules)
 
 5.  [Responsibilities of Root and Primary CNAs](#Section_3)
 
-<dl>
+3.1 [Root CNAs](#Section_3_1_root_cnas)
 
-<dd>3.1 [Root CNAs](#Section_3_1_root_cnas)</dd>
+3.1.1 [Assignment Rules](#Section_3_1_1_assignment_rules)
 
-<dl>
+3.1.2 [Communication Rules](#Section_3_1_2_communication_rules)
 
-<dd>3.1.1 [Assignment Rules](#Section_3_1_1_assignment_rules)</dd>
+3.1.3 [Administration Rules](#Section_3_1_3_administration_rules)
 
-<dd>3.1.2 [Communication Rules](#Section_3_1_2_communication_rules)</dd>
+3.2 [Primary CNA](#Section_3_2_primary_cna)
 
-<dd>3.1.3 [Administration Rules](#Section_3_1_3_administration_rules)</dd>
+3.2.1 [Assignment Rules](#Section_3_2_1_assignment_rules)
 
-</dl>
+3.2.2 [Communication Rules](#Section_3_2_2_communication_rules)
 
-<dd>3.2 [Primary CNA](#Section_3_2_primary_cna)</dd>
-
-<dl>
-
-<dd>3.2.1 [Assignment Rules](#Section_3_2_1_assignment_rules)</dd>
-
-<dd>3.2.2 [Communication Rules](#Section_3_2_2_communication_rules)</dd>
-
-<dd>3.2.3 [Administration Rules](#Section_3_2_3_administration_rules)</dd>
-
-</dl>
-
-</dl>
+3.2.3 [Administration Rules](#Section_3_2_3_administration_rules)
 
 7.  [CNA Candidate Process](#Section_4)
 
-<dl>
+4.1 [CNA Qualifications](#Section_4_1_qualifications)
 
-<dd>4.1 [CNA Qualifications](#Section_4_1_qualifications)</dd>
-
-<dd>4.2 [CNA On-Boarding Process](#Section_4_2_on_boarding)</dd>
-
-</dl>
+4.2 [CNA On-Boarding Process](#Section_4_2_on_boarding)
 
 9.  [Appeals Process](#Section_5)
 
-<dl>Appendix A. [Definitions](#Appendix_A)</dl>
+Appendix A. [Definitions](#Appendix_A)
 
-<dl>Appendix B. [CVE Information Format](#Appendix_B)</dl>
+Appendix B. [CVE Information Format](#Appendix_B)
 
-<dl>
+[Format](#Appendix_B_format)
 
-<dd>[Format](#Appendix_B_format)</dd>
+[Correctly Formatted Example](#Appendix_B_format_example)
 
-<dd>[Correctly Formatted Example](#Appendix_B_format_example)</dd>
+[JSON Submission and Storage Format](#Appendix_B_json_submission)
 
-<dd>[JSON Submission and Storage Format](#Appendix_B_json_submission)</dd>
+Appendix C. [Common Vulnerabilities and Exposures (CVE) Counting Rules](#Appendix_C)
 
-</dl>
+[Purpose](#Appendix_C_purpose)
 
-<dl>Appendix C. [Common Vulnerabilities and Exposures (CVE) Counting Rules](#Appendix_C)</dl>
+[Introduction](#Appendix_C_introduction)
 
-<dl>
+[Vulnerability Report](#Appendix_C_vulnerability_report)
 
-<dd>[Purpose](#Appendix_C_purpose)</dd>
+[Counting Decisions](#Appendix_C_counting_decisions)
 
-<dd>[Introduction](#Appendix_C_introduction)</dd>
+[Inclusion Decisions](#Appendix_C_inclusion_decisions)
 
-<dd>[Vulnerability Report](#Appendix_C_vulnerability_report)</dd>
+Appendix D. [Terms of Use](#Appendix_D)
 
-<dd>[Counting Decisions](#Appendix_C_counting_decisions)</dd>
+Appendix E. [Process to Correct Counting Issues or Update CVE Entries](#Appendix_E)
 
-<dd>[Inclusion Decisions](#Appendix_C_inclusion_decisions)</dd>
+[Reject](#Appendix_E_reject)
 
-</dl>
+[Merge](#Appendix_E_merge)
 
-<dl>Appendix D. [Terms of Use](#Appendix_D)</dl>
+[Split](#Appendix_E_split)
 
-<dl>Appendix E. [Process to Correct Counting Issues or Update CVE Entries](#Appendix_E)</dl>
+[Dispute](#Appendix_E_dispute)
 
-<dl>
+[Partial Duplicate](#Appendix_E_partial_duplicate)
 
-<dd>[Reject](#Appendix_E_reject)</dd>
+Appendix F. [Acronyms](#Appendix_F)
 
-<dd>[Merge](#Appendix_E_merge)</dd>
+Appendix G. [Quarterly Metrics](#Appendix_G)
 
-<dd>[Split](#Appendix_E_split)</dd>
+Appendix H. [Disclosure and Embargo Policies](#Appendix_H)
 
-<dd>[Dispute](#Appendix_E_dispute)</dd>
-
-<dd>[Partial Duplicate](#Appendix_E_partial_duplicate)</dd>
-
-</dl>
-
-<dl>Appendix F. [Acronyms](#Appendix_F)</dl>
-
-<dl>Appendix G. [Quarterly Metrics](#Appendix_G)</dl>
-
-<dl>Appendix H. [Disclosure and Embargo Policies](#Appendix_H)</dl>
-
-</div>
-
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Section_1" id="Section_1"></a>
+[Back to top](#top)
 
 ### 1\. Overview
 
@@ -142,45 +101,31 @@ The Common Vulnerabilities and Exposures (CVE) Program’s primary purpose is to
 
 The CVE Program’s primary challenge is to satisfy the demand for timely, accurate CVE Entry assignments, while rapidly expanding the scope of coverage to address the increasing number of vulnerabilities and evolving state of vulnerability management. The CVE Program is overseen by the [CVE Board](https://cve.mitre.org/community/board/index.html) (hereinafter the Board). To address CVE’s scalability challenge, the Board determined that the CVE Program must be federated and that CVE IDs should be produced both more quickly and in a more decentralized manner.
 
-<a name="Section_1_1_cnas" id="Section_1_1_cnas"></a>
-
 #### 1.1 CVE Numbering Authorities (CNAs)
 
 Operating under the authority of the CVE Program, “[CVE Numbering Authorities (CNAs)](https://cve.mitre.org/cve/cna.html)” are organizations that are authorized to assign CVE IDs to vulnerabilities affecting products within their distinct, agreed upon scope, for inclusion in first-time public announcements of new vulnerabilities. These CVE IDs are provided to researchers, vulnerability discoverers or reporters, and information technology vendors. Participation in this program is voluntary, and the benefits of participation include the ability to publicly disclose a vulnerability with an already assigned CVE ID, the ability to control the disclosure of vulnerability information without pre-publishing, and notification of vulnerabilities in products within a CNA’s scope by researchers who request a CVE ID from them.
-
-<a name="Section_1_2_federated_structure" id="Section_1_2_federated_structure"></a>
 
 #### 1.2 Federated CNA Structure
 
 In a federated CNA structure, CNAs are categorized as Primary, Root, and Sub-CNAs (or just “CNAs”, generically). Multiple Sub-CNAs may operate under the oversight of a Root CNA, while the Root CNAs operate under the oversight of a single, Primary CNA or another Root CNA. Sub-CNAs only assign CVEs for vulnerabilities in their own products or their domain of responsibility, hereinafter referred to as scope. Root CNAs manage a group of Sub-CNAs within a given domain or community, train and admit new Sub-CNAs, and are the assigners of last resort (i.e., no Sub-CNA exists for the scope) within that domain or community. The Primary CNA oversees the CVE Program, coordinates Root CNAs and Sub-CNAs, trains and admits new Root CNAs and Sub-CNAs, enables Root CNAs to administer their CVE scope, and is the assigner of last resort for requesters that are unable to have CVEs assigned at the Sub- or Root CNA levels.
 
-<div style="float:middle; width:100%; font-size:100%; vertical-align:top; padding-top:10px; padding-left:0px; padding-bottom:5px;">
+![Figure 1. Federated CNA Structure](CVE%20-%20CVE%20Numbering%20Authorities%20(CNA)%20Rules_files/Figure_1_Federated_CNA_Structure.png)
 
-<div style="width: 656px; margin: auto; text-align: center">![Figure 1\. Federated CNA Structure](CVE%20-%20CVE%20Numbering%20Authorities%20(CNA)%20Rules_files/Figure_1_Federated_CNA_Structure.png)
+Figure 1. Federated CNA Structure
 
-Figure 1\. Federated CNA Structure
-
-</div>
-
-</div>
+  
 
 Figure 1 shows how different Root CNAs have different areas of responsibility. Each colored box is a distinctly described scope. For the gray box, part of the scope of the gray box has been delegated to a Root CNA and its Sub-CNAs, as indicated by the yellow box.
 
 In cases where requests or issues cannot be resolved by a given CNA, the issues are escalated to the next higher-level CNA. (Examples of such issues would be a CNA being unresponsive beyond expected timeframes or a disagreement with a CNA over whether or not an issue is a vulnerability.) Requests and issues at the Sub-CNA level can be elevated to Root CNAs, and requests and issues at the Root CNAs can be elevated to the Primary CNA. The same flow, from Sub-CNAs to Root CNAs to the Primary CNA, is followed to alert the next higher CNA when CVEs are assigned, or when reporting other programmatic data. The Primary CNA provides blocks of IDs to Root CNAs, and Root CNAs provide blocks of IDs to Sub-CNAs.
 
-<div style="float:middle; width:100%; font-size:100%; vertical-align:top; padding-top:10px; padding-left:0px; padding-bottom:5px;">
+![Figure 2. CNA CVE Request and Assignment Process](CVE%20-%20CVE%20Numbering%20Authorities%20(CNA)%20Rules_files/Figure_2_CNA_CVE_Request_and_Assignment_Process.png)
 
-<div style="width: 1040px; margin: auto; text-align: center">![Figure 2\. CNA CVE Request and Assignment Process](CVE%20-%20CVE%20Numbering%20Authorities%20(CNA)%20Rules_files/Figure_2_CNA_CVE_Request_and_Assignment_Process.png)
+Figure 2. CNA CVE Request and Assignment Process
 
-Figure 2\. CNA CVE Request and Assignment Process
-
-</div>
-
-</div>
+  
 
 **NOTE:** Step 4 refers to “CVE information” that is provided to the Root CNAs and Primary CNAs. The information needed is listed in [Appendix B: CVE Information Format](#Appendix_B).
-
-<a name="Section_1_3_purpose" id="Section_1_3_purpose"></a>
 
 #### 1.3 Purpose and Goal of the CNA Rules
 
@@ -201,8 +146,6 @@ Examples of remediation and sanctions include, but are not limited to:
 
 The CNA rules, once adopted, will be reviewed at least annually, and more frequently based on lessons learned, if necessary.
 
-<a name="Section_1_4_document_structure" id="Section_1_4_document_structure"></a>
-
 #### 1.4 Document Structure
 
 This document is broken down into assignment, communication, and administration rules that apply to all CNAs, including Primary, Root, and Sub, as well as those rules specific to Primary and Root CNAs.
@@ -212,9 +155,7 @@ This document is broken down into assignment, communication, and administration 
 *   [Section 4: CNA Candidate Process](#Section_4)
 *   [Section 5: Appeals Process](#Section_5)
 
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Section_2" id="Section_2"></a>
+[Back to top](#top)
 
 ### 2\. Rules for All CNAs
 
@@ -222,27 +163,27 @@ The following rules apply to all CNAs, regardless of level. They are related to 
 
 All CNAs must adhere to the following rules:
 
-<a name="Section_2_1_assignment_rules" id="Section_2_1_assignment_rules"></a>
-
 #### 2.1 Assignment Rules
 
 1.  Assign CVE IDs to security vulnerabilities in their scope as described by the CNA’s Root CNA or the Primary CNA. CVE IDs should only be assigned to vulnerabilities that are or will be made public. (Disputes related to scope should be addressed by the next higher-level CNA first.) Vulnerabilities that will not be made public do not receive CVE IDs.  
     Note: for a vulnerability to be considered "public", the following conditions must be met:  
-
+    
     *   There must be a URL including information about the vulnerability accessible from the internet.
     *   The Terms of Use of the website must allow the CVE List to link to the URL.
-    *   The document linked by the URL must contain the minimum required information for a CVE Entry (see [Appendix B: CVE Information Format](#Appendix_B)).  
+    *   The document linked by the URL must contain the minimum required information for a CVE Entry (see [Appendix B: CVE Information Format](#Appendix_B)).
+    
+      
     Registration and login requirements are acceptable, but there cannot be other restrictions for accessing that content. Also, advisories that require payment for access are not considered public. That said, if you have a public advisory with the minimum required details with additional details available through paid access, the vulnerability is still considered public.
 2.  Only assign CVE IDs to security vulnerabilities when no lower level CNA exists which already covers a more constrained scope.  
     Note: when assigning a CVE ID to a vulnerability in a bundled product, a CNA utilizing the bundled product in their own products may assign a CVE ID for the bundled product if:  
-
+    
     *   The producer of the bundled product is not a CNA, and
-    *   The assigner coordinates with the producer of the bundled product or (if contact with the producer fails) the Root CNA for that bundled product.  
-
+    *   The assigner coordinates with the producer of the bundled product or (if contact with the producer fails) the Root CNA for that bundled product.
+    
+      
+    
 3.  Follow CVE counting rules established by the CVE Program as implemented by the Primary CNA. See [Appendix C: Common Vulnerabilities and Exposures (CVE) Counting Rules](#Appendix_C). This rule does not prevent Root CNAs and Sub-CNAs from establishing counting rules to augment the CVE counting rules established by the CVE Program. (Root CNAs can establish augmented counting rules for their scope, affecting all Sub-CNAs under them.) See [Root CNAs, Section 3.1.2: Communication Rules](#Section_3_1_2_communication_rules) for communications rules related to such counting rules.
 4.  CNAs should update their upstream CNAs within 24 hours of the publication of a CVE ID. (The meaning of “publication” is discussed in [Appendix A: Definitions](#Appendix_A).)
-
-<a name="Section_2_2_communication_rules" id="Section_2_2_communication_rules"></a>
 
 #### 2.2 Communication Rules
 
@@ -261,8 +202,6 @@ All CNAs must adhere to the following rules:
 10.  If a CVE ID is being assigned to a vulnerability, the CNA MUST make a reasonable effort to notify the maintainer of the code in which that vulnerability exists. (If the CNA is assigning for a vulnerability in their own product or codebase, this is inherently done.) For example, if an operating system vendor discovers a vulnerability in a printing library they distribute, in addition to assigning the CVE ID to the vulnerability, they should attempt to contact the upstream developer. This will help avoid duplicate CVE ID assignments as well as ensure others that are affected by the vulnerability will be made aware of it.
 11.  A CNA must provide a URL to a list the products for which they accept vulnerability reports, which is referred to as their “scope”. When defining their scope, vendors and development projects should offer a blanket statement (e.g., “All of Company X’s products”), a list of specific things covered, or a list of specific things not covered (or a mix of covered and not covered). For researchers and third-party coordinators, theirs might say “we will issue CVE IDs for products or projects that we are researching unless they are otherwise covered by another CNA”. This would help direct folks away from them as a source for a CVE ID in anything in particular and instead point them to the proper CNA (or up to the Primary). The published scope must be updated whenever a CNA’s scope changes. Scope may change due to the introduction of new projects or products; projects or products being set to “end-of-life” status; mergers, sales, or acquisitions at a company level; or a change in process.
 
-<a name="Section_2_3_administration_rules" id="Section_2_3_administration_rules"></a>
-
 #### 2.3 Administration Rules
 
 1.  Operate under the CVE [Terms of Use](https://cve.mitre.org/about/termsofuse.html).
@@ -271,19 +210,13 @@ All CNAs must adhere to the following rules:
 3.  Provide any documentation required to adjudicate disputes to the higher-level CNA.
 4.  Upon request by the Primary CNA or by the CNA’s Root CNA, provide a list of unused CVE IDs that have been reserved by the CNA. (This will typically be done on a yearly basis for the previous year’s CVE ID reservations.)
 
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Section_3" id="Section_3"></a>
+[Back to top](#top)
 
 ### 3\. Responsibilities of Root and Primary CNAs
-
-<a name="Section_3_1_root_cnas" id="Section_3_1_root_cnas"></a>
 
 #### 3.1 Root CNAs
 
 All Root CNAs must adhere to the following rules:
-
-<a name="Section_3_1_1_assignment_rules" id="Section_3_1_1_assignment_rules"></a>
 
 ##### 3.1.1 Assignment Rules
 
@@ -293,8 +226,6 @@ All Root CNAs must adhere to the following rules:
 4.  Address CVE assignment issues from its Sub-CNAs that require escalation.
 5.  Provide public documentation describing the specific process for submitting CVE assignments and other CVE requests.
 
-<a name="Section_3_1_2_communication_rules" id="Section_3_1_2_communication_rules"></a>
-
 ##### 3.1.2 Communication Rules
 
 1.  Notify the Primary CNA whenever Sub-CNAs are established or removed.
@@ -302,22 +233,16 @@ All Root CNAs must adhere to the following rules:
 3.  Maintain a private list of individual POCs within each Sub-CNA for use by CNAs only. Provide this information to the Primary CNA.
 4.  Maintain a public listing of the established counting rules followed by the Root CNA and Sub-CNAs in its domain.
 
-<a name="Section_3_1_3_administration_rules" id="Section_3_1_3_administration_rules"></a>
-
 ##### 3.1.3 Administration Rules
 
-1.  Accept metrics reports from Sub-CNAs. See 2.3.2\. The format and instructions for sending metrics are determined by the Root CNA.
+1.  Accept metrics reports from Sub-CNAs. See 2.3.2. The format and instructions for sending metrics are determined by the Root CNA.
 2.  Submit metrics from Sub-CNAs quarterly, within two weeks of the quarter, to the Primary CNA. Quarters are based on the calendar year.
 3.  Act as an escalation and adjudication point for issue resolution for Sub-CNAs in its domain.
 4.  When appropriate, apply sanctions upon any Sub-CNAs within its domain and notify the Primary CNA. The application of sanctions should occur as a last resort.
 5.  Facilitate the enforcement of any administrative actions taken by the Primary CNA against a Sub-CNA.
 6.  Follow the CNA Candidate Process described in Section 4 when adding new Sub-CNAs.
 
-<a name="Section_3_2_primary_cna" id="Section_3_2_primary_cna"></a>
-
 #### 3.2 Primary CNA
-
-<a name="Section_3_2_1_assignment_rules" id="Section_3_2_1_assignment_rules"></a>
 
 ##### 3.2.1 Assignment Rules
 
@@ -328,8 +253,6 @@ All Root CNAs must adhere to the following rules:
 5.  Maintain a process for rejecting unused reserved CVE IDs each year. One example process would be: at the beginning of each calendar year, CNAs must indicate to the Primary CNA which CVE IDs from the previous calendar year were not assigned to a vulnerability. Those CVE IDs that were unused would be rejected. (CVE IDs for previous calendar years can always be requested from the Primary CNA if necessary.)
 6.  Maintain a process for rejecting assigned-but-unpopulated CVE entries based on an expiration period. For example, that period may be “if a CVE ID was assigned two years ago but the entry for it was not populated by the assigner, the CVE ID will be rejected”. The specific time frame should be publicly documented by the Primary CNA and can be updated based on the needs of the CVE community.
 
-<a name="Section_3_2_2_communication_rules" id="Section_3_2_2_communication_rules"></a>
-
 ##### 3.2.2 Communication Rules
 
 1.  Provide a listing of all Root CNAs and Sub-CNAs including public points of contact and web links. Obtain this information from Root CNAs.
@@ -337,8 +260,6 @@ All Root CNAs must adhere to the following rules:
 3.  Provide coordination of communication channels between Root CNAs.
 4.  Respond to inquiries by Root CNAs and Sub-CNAs in a timely manner; establish responsiveness metrics for such responsiveness.
 5.  Maintain a public listing of the established counting rules for the CVE Program. See [Appendix C: Common Vulnerabilities and Exposures (CVE) Counting Rules](#Appendix_C).
-
-<a name="Section_3_2_3_administration_rules" id="Section_3_2_3_administration_rules"></a>
 
 ##### 3.2.3 Administration Rules
 
@@ -349,9 +270,7 @@ All Root CNAs must adhere to the following rules:
 5.  When appropriate, apply sanctions upon any CNA.
 6.  Follow the CNA Candidate Process described in [Section 4](#Section_4) when adding new Root CNAs.
 
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Section_4" id="Section_4"></a>
+[Back to top](#top)
 
 ### 4\. CNA Candidate Process
 
@@ -363,8 +282,6 @@ The goals of the CNA candidate process:
 2.  Individual members of the new CNA’s team are able to perform CVE assignment and counting processes.
 3.  Clear communication channels exist between CNAs and the rest of the CVE Program.
 
-<a name="Section_4_1_qualifications" id="Section_4_1_qualifications"></a>
-
 #### 4.1 CNA Qualifications
 
 A candidate is qualified if they meet the following criteria:
@@ -375,11 +292,9 @@ A candidate is qualified if they meet the following criteria:
     2.  an established entity with an established security advisory capability that typically acts as a neutral interface between researchers and vendors or
     3.  an established bug bounty service provider or
     4.  an established vulnerability research team or
-    5.  an independent vulnerability researcher.A Root CNA may be a regional coordinator (such as a Computer Emergency Response Team [CERT] or a Computer Security Incident Response Team [CSIRT]) or a domain publisher (such as an Information Sharing and Analysis Center [ISAC] representing a particular sector). A CNA may also be a mature research organization.
+    5.  an independent vulnerability researcher.A Root CNA may be a regional coordinator (such as a Computer Emergency Response Team \[CERT\] or a Computer Security Incident Response Team \[CSIRT\]) or a domain publisher (such as an Information Sharing and Analysis Center \[ISAC\] representing a particular sector). A CNA may also be a mature research organization.
 3.  The CNA must be an established distribution point or source for first-time product vulnerability announcements (which may concern their own products). In keeping with the CVE requirement to identify public issues, the CNA must only assign CVEs to security issues that will be made public. If the CNA is disclosing vulnerabilities for products or projects not their own (and not covered by another CNA), they must consistently publish a public vulnerability announcement for each assignment. (Refer to the definition of “vulnerability” in [Appendix A: Definitions](#Appendix_A) for clarification on what products should and should not be considered when assigning a CVE ID.)
 4.  The CNA should follow coordinated disclosure practices as determined by the community which they serve. Coordinated disclosure practices reduce the likelihood that duplicate or inaccurate information will be introduced into CVE.
-
-<a name="Section_4_2_on_boarding" id="Section_4_2_on_boarding"></a>
 
 #### 4.2 CNA On-Boarding Process
 
@@ -401,9 +316,7 @@ A candidate is qualified if they meet the following criteria:
 
 Any changes in a CNA’s program, including staff changes or process changes, must be documented and shared with the CVE Program through a CNA’s Root CNA or the Primary CNA.
 
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Section_5" id="Section_5"></a>
+[Back to top](#top)
 
 ### 5\. Appeals Process
 
@@ -414,9 +327,7 @@ For situations where CVE assignment decisions are disputed, or where there is a 
 3.  The Primary CNA contacts the appropriate entities to collect information relevant to the issue. The CNAs involved in the dispute provide documentation per the rules established in this document. The Primary CNA may also engage the CVE Board for their consideration of the issue.
 4.  The Primary CNA communicates its decision to all relevant parties once the disagreement or appeal has been fully considered. This result is final.
 
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Appendix_A" id="Appendix_A"></a>
+[Back to top](#top)
 
 ### Appendix A: Definitions
 
@@ -470,7 +381,7 @@ A CVE ID is considered reserved when:
 
 *   The CVE ID has been allocated to a CNA for their potential use, or
 *   The Primary CNA has assigned a CVE ID to a vulnerability for a non-CNA CVE ID requester.  
-
+      
     Note: A reserved CVE ID may be in the reserved state without having been assigned. See [What does it mean when a CVE Entry is marked "RESERVED"?](https://cve.mitre.org/about/faqs.html#reserved_signify_in_cve_entry) for more discussion on reserved CVE IDs.
 
 A CVE ID entry is populated when the description, references, and other meta information about the entry is added to the CVE List. A CVE ID entry marked as “RESERVED” or “REJECTED” is not considered populated.
@@ -479,13 +390,9 @@ A CVE ID is published when the CVE ID itself is used in a public forum outside o
 
 Note the distinction between CVE IDs that are “published” versus those that are “populated.” Published CVE ID exist outside of the CVE List. Populated CVE IDs are those that are found within the CVE List. These two terms help make the distinction between what is and is not included within the official CVE List.
 
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Appendix_B" id="Appendix_B"></a>
+[Back to top](#top)
 
 ### Appendix B: CVE Information Format
-
-<a id="Appendix_B_format" name="Appendix_B_format"></a>
 
 #### Format
 
@@ -493,84 +400,48 @@ CNAs must provide CVE assignment information to the CNA level above them using t
 
 1.  The preferred format for submitting CVE assignment information is using the [JSON schema](https://github.com/CVEProject/automation-working-group/blob/master/cve_json_schema/DRAFT-JSON-file-format-v4.md).
 2.  In a flat file, use this format:  
-
-    <table style="width:100%">
-
-    <tbody>
-
-    <tr>
-
-    <td>[CVEID]:</td>
-
-    </tr>
-
-    <tr>
-
-    <td>[PRODUCT]:</td>
-
-    </tr>
-
-    <tr>
-
-    <td>[VERSION]:</td>
-
-    </tr>
-
-    <tr>
-
-    <td>[PROBLEMTYPE]:</td>
-
-    </tr>
-
-    <tr>
-
-    <td>[REFERENCES]:</td>
-
-    </tr>
-
-    <tr>
-
-    <td>[DESCRIPTION]:</td>
-
-    </tr>
-
-    <tr>
-
-    <td>[ASSIGNINGCNA]:</td>
-
-    </tr>
-
-    </tbody>
-
-    </table>
-
+    
+    \[CVEID\]:
+    
+    \[PRODUCT\]:
+    
+    \[VERSION\]:
+    
+    \[PROBLEMTYPE\]:
+    
+    \[REFERENCES\]:
+    
+    \[DESCRIPTION\]:
+    
+    \[ASSIGNINGCNA\]:
+    
 3.  In a Comma Separated Values (CSV) file, each row should include each of these columns with CVE ID as a primary key.
 
 There are no format limitations on the actual data, which allows for flexibility across products that may have unusual versioning or differing definitions, such as what a “problem type” means. The only exception to this is that references must be URLs. With or without this technical standard, the information referenced by each field is required for assigning a CVE ID. In all cases, the content included in CVE Entry submission must be germane to the vulnerability. The Primary CNA reserves the right to modify or reject content included in CVE assignment if it is deemed inappropriate by the Primary CNA. Any information submitted as part of a CVE Entry must be submitted in English, though CVE Entries may reference content in any language.
 
 Where applicable, make use of industry standards when describing vulnerabilities.
 
-**[PRODUCT]**
+**\[PRODUCT\]**
 
-As a general guideline, [PRODUCT] should include the vendor, developer, or project name as well as the name of the actual software or hardware in which the vulnerability exists.
+As a general guideline, \[PRODUCT\] should include the vendor, developer, or project name as well as the name of the actual software or hardware in which the vulnerability exists.
 
-**[VERSION]**
+**\[VERSION\]**
 
-[VERSION] should include the version, date of release, or whatever indicator that is used by vendors, developers, or projects to differentiate between releases. [VERSION] can be described with specific version numbers, ranges of versions, or “all versions before/after” a version number or date.
+\[VERSION\] should include the version, date of release, or whatever indicator that is used by vendors, developers, or projects to differentiate between releases. \[VERSION\] can be described with specific version numbers, ranges of versions, or “all versions before/after” a version number or date.
 
-**[PROBLEMTYPE]**
+**\[PROBLEMTYPE\]**
 
-As mentioned above, [PROBLEMTYPE] can include an arbitrary summary of the problem, though [Common Weakness Enumerations (CWEs)](https://cwe.mitre.org/) are an excellent standard to use in this field.
+As mentioned above, \[PROBLEMTYPE\] can include an arbitrary summary of the problem, though [Common Weakness Enumerations (CWEs)](https://cwe.mitre.org/) are an excellent standard to use in this field.
 
-**[REFERENCES]**
+**\[REFERENCES\]**
 
-[REFERENCES] should be URLs pointing to a world-wide-web-based resource. For CSV and flat-file formats, they should be separated by a space. References should point to content that is relevant to the vulnerability and include at least all the details included in the CVE Entry. Ideally, references should point to content that includes the CVE ID itself whenever possible. References must also be publicly available, as described in [Rules for All CNAs, Section 2.2: Communication Rules](#Section_2_2_communication_rules).
+\[REFERENCES\] should be URLs pointing to a world-wide-web-based resource. For CSV and flat-file formats, they should be separated by a space. References should point to content that is relevant to the vulnerability and include at least all the details included in the CVE Entry. Ideally, references should point to content that includes the CVE ID itself whenever possible. References must also be publicly available, as described in [Rules for All CNAs, Section 2.2: Communication Rules](#Section_2_2_communication_rules).
 
-**[DESCRIPTION]**
+**\[DESCRIPTION\]**
 
-The [DESCRIPTION] field is a plain language field that should describe the vulnerability with sufficient detail as to demonstrate that the vulnerability is unique. The required information listed above should be included in the [DESCRIPTION], as well as other details the author feels are relevant or necessary to show uniqueness.
+The \[DESCRIPTION\] field is a plain language field that should describe the vulnerability with sufficient detail as to demonstrate that the vulnerability is unique. The required information listed above should be included in the \[DESCRIPTION\], as well as other details the author feels are relevant or necessary to show uniqueness.
 
-Specifically, the [DESCRIPTION] field could also include:
+Specifically, the \[DESCRIPTION\] field could also include:
 
 *   An explanation of an attack type using the vulnerability;
 *   The impact of the vulnerability;
@@ -578,72 +449,32 @@ Specifically, the [DESCRIPTION] field could also include:
 *   Any attack vectors that can make use of the vulnerability.
 
 Descriptions often follow this template:  
-
-     [PROBLEM TYPE] in [PRODUCT/VERSION] causes [IMPACT] when [ATTACK]  
-
+  
+     \[PROBLEM TYPE\] in \[PRODUCT/VERSION\] causes \[IMPACT\] when \[ATTACK\]  
+  
 where impact and attack are arbitrary terms that should be relevant to the nature of the vulnerability.
 
-**[ASSIGNINGCNA]**
+**\[ASSIGNINGCNA\]**
 
-The [ASSIGNINGCNA] field should include the name of the assigning CNA. CNAs should use a consistent name to facilitate searches for CVE IDs that originate from them.
-
-<a id="Appendix_B_format_example" name="Appendix_B_format_example"></a>
+The \[ASSIGNINGCNA\] field should include the name of the assigning CNA. CNAs should use a consistent name to facilitate searches for CVE IDs that originate from them.
 
 #### Correctly Formatted Example
 
 Following is an example of the reporting format in use. In this case, the Sub-CNA “BigCompanySoft” is assigning a CVE ID to versions of their product.
 
-<table style="width:100%">
+\[CVEID\]: CVE-2016-123455
 
-<tbody>
+\[PRODUCT\]: BIGCOMPANYSOFT SOFTWARE PRODUCT
 
-<tr>
+\[VERSION\]: All versions prior to version 2.5
 
-<td>[CVEID]: CVE-2016-123455</td>
+\[PROBLEMTYPE\]: Arbitrary Code Execution
 
-</tr>
+\[REFERENCES\]: http://bigcompanysoft.com/vuln/v1232.html
 
-<tr>
+\[DESCRIPTION\]: CoreGraphics in BIGCOMPANYSOFT SOFTWARE PRODUCT before 2.5 allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted BMP image.
 
-<td>[PRODUCT]: BIGCOMPANYSOFT SOFTWARE PRODUCT</td>
-
-</tr>
-
-<tr>
-
-<td>[VERSION]: All versions prior to version 2.5</td>
-
-</tr>
-
-<tr>
-
-<td>[PROBLEMTYPE]: Arbitrary Code Execution</td>
-
-</tr>
-
-<tr>
-
-<td>[REFERENCES]: http://bigcompanysoft.com/vuln/v1232.html</td>
-
-</tr>
-
-<tr>
-
-<td>[DESCRIPTION]: CoreGraphics in BIGCOMPANYSOFT SOFTWARE PRODUCT before 2.5 allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted BMP image.</td>
-
-</tr>
-
-<tr>
-
-<td>[ASSIGNINGCNA]: BigCompanySoft</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<a id="Appendix_B_json_submission" name="Appendix_B_json_submission"></a>
+\[ASSIGNINGCNA\]: BigCompanySoft
 
 #### JSON Submission and Storage Format
 
@@ -671,19 +502,13 @@ The JSON schema will be reviewed periodically. The review cycle will follow a sc
 
 *   The new JSON format would take effect on January 1 of the next year. This would give CNAs two months to implement any changes to their processes that become needed after the JSON format revised.
 
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Appendix_C" id="Appendix_C"></a>
+[Back to top](#top)
 
 ### Appendix C: Common Vulnerabilities and Exposures (CVE) Counting Rules
-
-<a id="Appendix_C_purpose" name="Appendix_C_purpose"></a>
 
 #### Purpose
 
 This appendix provides the definition of, and guidelines for, the CVE vulnerability counting process. These guidelines should be used by any CVE Numbering Authorities (CNAs) who participate within the CVE Program.
-
-<a id="Appendix_C_introduction" name="Appendix_C_introduction"></a>
 
 #### Introduction
 
@@ -691,13 +516,9 @@ The nature and accuracy of the counting process underpins the value of a CVE Ent
 
 CVE IDs can be assigned to vulnerabilities in any code-based entity or standards upon which code-based entities are designed. This can include software, shared codebases, libraries, protocols, standards, hardware (e.g., firmware or microcode), hardware platforms, file formats, or data encodings.
 
-<a id="Appendix_C_vulnerability_report" name="Appendix_C_vulnerability_report"></a>
-
 #### Vulnerability Report
 
 The following decision trees should be used when receiving a report for a single or multiple vulnerabilities. The decision trees are meant to be used together and are to be followed from top to bottom.
-
-<a id="Appendix_C_counting_decisions" name="Appendix_C_counting_decisions"></a>
 
 ### Counting Decisions
 
@@ -705,29 +526,21 @@ Use the following decision tree to determine how many vulnerabilities there are 
 
 NOTE: It is intended that one of CNT2.1 or CNT2.2 be completed, but not both (i.e., A CNA has the flexibility and choice to use the claim-based or security model-based inclusion decision).
 
-<table style="width: 100%" class="tableborder" cellpadding="10px" bordercolor="#000000">
+  
 
-<tbody>
+Counting Decision
 
-<tr bgcolor="black">
+Description
 
-<td class="whiteFont" style="width: 20%">Counting Decision</td>
+Action
 
-<td class="whiteFont" style="width: 45%">Description</td>
+**CNT1**
 
-<td class="whiteFont" style="width: 35%">Action</td>
+**Independently Fixable:**  
+  
+For each reported bug, determine if it can be fixed independently of the other bugs (i.e., a code fix can be created to fix only the bug in question)? A common indicator of independently fixable would be that the vulnerability affects a different version of the product than the other reported vulnerabilities. Note that this does not mean that the bugs are fixed independently; only that if the vendor chose to the bugs could be fixed independently.
 
-</tr>
-
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">**CNT1**</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">**Independently Fixable:**  
-
-For each reported bug, determine if it can be fixed independently of the other bugs (i.e., a code fix can be created to fix only the bug in question)? A common indicator of independently fixable would be that the vulnerability affects a different version of the product than the other reported vulnerabilities. Note that this does not mean that the bugs are fixed independently; only that if the vendor chose to the bugs could be fixed independently.</td>
-
-<td class="borderbottomcellboarder" style="width: 35%">  
+  
 
 **If a vulnerability can be fixed independently from the others:** Go to CNT2
 
@@ -735,31 +548,19 @@ For each reported bug, determine if it can be fixed independently of the other b
 
 **If it is not clear whether the vulnerabilities can be fixed independently:** Group the bugs together and go to CNT2
 
-</td>
+**CNT2**
 
-</tr>
+**Vulnerability:**  
+  
+For each bug, apply the following decisions to determine if it is a vulnerability. If the bug does not meet the criteria, can you combine it with one or more other bugs to meet the following criteria (e.g., combine a permissions issue with predictable file name and a race condition to generate a symbolic link attack)?
 
-<tr class="cellboarder">
+**See:** CNT2.1, CNT2.2A, CNT2.2B
 
-<td class="borderbottomcellboarder" style="width: 20%">**CNT2**</td>
+CNT2.1
 
-<td class="borderbottomcellboarder" style="width: 45%">**Vulnerability:**  
-
-For each bug, apply the following decisions to determine if it is a vulnerability. If the bug does not meet the criteria, can you combine it with one or more other bugs to meet the following criteria (e.g., combine a permissions issue with predictable file name and a race condition to generate a symbolic link attack)?</td>
-
-<td class="borderbottomcellboarder" style="width: 35%">**See:** CNT2.1, CNT2.2A, CNT2.2B</td>
-
-</tr>
-
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">CNT2.1</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">**Vendor Acknowledgment:**  
-
-Does the affected vendor acknowledge the bug as a vulnerability and does it also acknowledge a negative impact on security? Examples of negative impact could include; code execution, providing the attacker with extra privileges or information, causing a denial of service, etc. (i.e., see the definition of a vulnerability as defined by the CVE Program).</td>
-
-<td class="borderbottomcellboarder" style="width: 35%">
+**Vendor Acknowledgment:**  
+  
+Does the affected vendor acknowledge the bug as a vulnerability and does it also acknowledge a negative impact on security? Examples of negative impact could include; code execution, providing the attacker with extra privileges or information, causing a denial of service, etc. (i.e., see the definition of a vulnerability as defined by the CVE Program).
 
 **Yes:** Continue to CNT3
 
@@ -767,19 +568,11 @@ Does the affected vendor acknowledge the bug as a vulnerability and does it also
 
 **Not sure:** Continue to CNT2.2A or CNT2.2B
 
-</td>
+CNT2.2A
 
-</tr>
-
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">CNT2.2A</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">**Claim-Based:**  
-
-Does the vulnerability report provide a demonstrated negative impact for the bug? Examples of negative impact could include; code execution, providing the attacker with extra privileges or information, causing a denial of service, etc. (i.e., see the definition of a vulnerability as defined by the CVE Program).</td>
-
-<td class="borderbottomcellboarder" style="width: 35%">
+**Claim-Based:**  
+  
+Does the vulnerability report provide a demonstrated negative impact for the bug? Examples of negative impact could include; code execution, providing the attacker with extra privileges or information, causing a denial of service, etc. (i.e., see the definition of a vulnerability as defined by the CVE Program).
 
 **Yes:** Continue to CNT3
 
@@ -787,19 +580,11 @@ Does the vulnerability report provide a demonstrated negative impact for the bug
 
 **Not sure:** Continue to CNT3
 
-</td>
+CNT2.2B
 
-</tr>
-
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">CNT2.2B</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">**Security Model-Based:**  
-
-Does the vulnerability report provide evidence of a mistake or design oversight in software that violates the security policy of the system?</td>
-
-<td class="borderbottomcellboarder" style="width: 35%">
+**Security Model-Based:**  
+  
+Does the vulnerability report provide evidence of a mistake or design oversight in software that violates the security policy of the system?
 
 **Yes:** Continue to CNT3
 
@@ -807,31 +592,19 @@ Does the vulnerability report provide evidence of a mistake or design oversight 
 
 **Not sure:** Continue to CNT3
 
-</td>
+**CNT3**
 
-</tr>
-
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">**CNT3**</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">**Shared Codebase, Library, Protocol:**  
-
+**Shared Codebase, Library, Protocol:**  
+  
 Does the vulnerability affect a shared codebase, library, or protocol implementation issue?  
+  
+**NOTE:** Consultation with the Root CNA is recommended when the vulnerability affects software covered by other CNAs.
 
-**NOTE:** Consultation with the Root CNA is recommended when the vulnerability affects software covered by other CNAs.</td>
+**See:** “For Shared Codebase” and “For Libraries, Protocols, or Standards”
 
-<td class="borderbottomcellboarder" style="width: 35%">**See:** “For Shared Codebase” and “For Libraries, Protocols, or Standards”</td>
+CNT3
 
-</tr>
-
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">CNT3</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">For Shared Codebase:</td>
-
-<td class="borderbottomcellboarder" style="width: 35%">
+For Shared Codebase:
 
 **Affects a single product:** Assign one CVE ID and continue to INC1
 
@@ -841,17 +614,9 @@ Does the vulnerability affect a shared codebase, library, or protocol implementa
 
 **Not sure or undefined:** Assign a CVE ID to each product and continue to INC1
 
-</td>
+CNT3
 
-</tr>
-
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">CNT3</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">For Libraries, Protocols, or Standards:</td>
-
-<td class="borderbottomcellboarder" style="width: 35%">
+For Libraries, Protocols, or Standards:
 
 **If there is a way to use the library, protocol, or standard without being vulnerable:** Assign a CVE ID to each affected codebase or product and continue to INC1
 
@@ -859,45 +624,27 @@ Does the vulnerability affect a shared codebase, library, or protocol implementa
 
 **Not sure:** Assign a CVE ID to each affected codebase and continue to INC1
 
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<a id="Appendix_C_inclusion_decisions" name="Appendix_C_inclusion_decisions"></a>
-
 #### Inclusion Decisions
 
 Use this decision tree to determine if a vulnerability should be assigned a CVE ID (i.e., Does vulnerability meet the CVE inclusion decisions?). When multiple vulnerabilities are reported, this decision tree will need to be repeated for each issue.
 
 NOTE: The Inclusion Decisions table describes an order to the inclusion decisions. However, so long as the vulnerability meets all of the conditions, it does not matter which order the decisions are executed in.
 
-<table style="width: 100%" class="tableborder" cellpadding="10px" bordercolor="#000000">
+  
 
-<tbody>
+Counting Decision
 
-<tr bgcolor="black">
+Description
 
-<td class="whiteFont" style="width: 20%">Counting Decision</td>
+Action
 
-<td class="whiteFont" style="width: 45%">Description</td>
+**INC1**
 
-<td class="whiteFont" style="width: 35%">Action</td>
+**In Scope of Authority:**  
+  
+Does the vulnerability report fall into the scope of authority for the CNA. CNAs can only assign CVE IDs to vulnerabilities that are within their scope of authority as defined by their root CNA.
 
-</tr>
-
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">**INC1**</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">**In Scope of Authority:**  
-
-Does the vulnerability report fall into the scope of authority for the CNA. CNAs can only assign CVE IDs to vulnerabilities that are within their scope of authority as defined by their root CNA.</td>
-
-<td class="borderbottomcellboarder" style="width: 35%">  
+  
 
 **Yes:** Continue to INC2
 
@@ -905,37 +652,21 @@ Does the vulnerability report fall into the scope of authority for the CNA. CNAs
 
 **Not sure:** CONSULT Root CNA
 
-</td>
+**INC2**
 
-</tr>
-
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">**INC2**</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">**Intended to be Public:**  
-
-Is the vulnerability report or the issue described currently published publicly or intended to be published to a publicly available location in the future? CVE IDs are intended to be public information and are not assigned to vulnerabilities that are intended to be private. See [Rules for All CNAs, Section 2.1: Assignment Rules](#Section_2_1_assignment_rules) for a description of what is considered “public.”</td>
-
-<td class="borderbottomcellboarder" style="width: 30%">
+**Intended to be Public:**  
+  
+Is the vulnerability report or the issue described currently published publicly or intended to be published to a publicly available location in the future? CVE IDs are intended to be public information and are not assigned to vulnerabilities that are intended to be private. See [Rules for All CNAs, Section 2.1: Assignment Rules](#Section_2_1_assignment_rules) for a description of what is considered “public.”
 
 **Yes:** Continue to INC3
 
 **No:** Do not assign a CVE ID
 
-</td>
+**INC3**
 
-</tr>
-
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">**INC3**</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">**Installable/Customer-Controlled Software:**  
-
-Is the vulnerability site-specific? Is it only in an online service (software-as-a-service), on a specific website, or only offered through hosting solutions that are under the full control of the vendor? CVE IDs are assigned to products that are customer-controlled or customer-installable.</td>
-
-<td class="borderbottomcellboarder" style="width: 35%">
+**Installable/Customer-Controlled Software:**  
+  
+Is the vulnerability site-specific? Is it only in an online service (software-as-a-service), on a specific website, or only offered through hosting solutions that are under the full control of the vendor? CVE IDs are assigned to products that are customer-controlled or customer-installable.
 
 **Yes:** Do not assign a CVE ID
 
@@ -943,19 +674,11 @@ Is the vulnerability site-specific? Is it only in an online service (software-as
 
 **Not sure:** Continue to INC4
 
-</td>
+**INC4**
 
-</tr>
-
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">**INC4**</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">**Generally Available and Licensed Product:**  
-
-Does the vulnerability affect software that is licensed and made generally available to the public? If the vulnerability only affects a version of software that was never made generally available to the publisher's or vendor's customers, the bug should not be assigned a CVE ID. CVE IDs are not assigned to bugs in malware, closed betas, commits that were fixed before a new release is issued, applications used only within a single organization (such as a unique, custom-built system).</td>
-
-<td class="borderbottomcellboarder" style="width: 35%">
+**Generally Available and Licensed Product:**  
+  
+Does the vulnerability affect software that is licensed and made generally available to the public? If the vulnerability only affects a version of software that was never made generally available to the publisher's or vendor's customers, the bug should not be assigned a CVE ID. CVE IDs are not assigned to bugs in malware, closed betas, commits that were fixed before a new release is issued, applications used only within a single organization (such as a unique, custom-built system).
 
 **Yes:** Continue to INC5
 
@@ -963,19 +686,13 @@ Does the vulnerability affect software that is licensed and made generally avail
 
 **Not sure:** Continue to INC5
 
-</td>
+**INC5**
 
-</tr>
+**Duplicate:**  
+  
+Has the vulnerability already been assigned a CVE ID by you or does it already exist in the CVE List?
 
-<tr class="cellboarder">
-
-<td class="borderbottomcellboarder" style="width: 20%">**INC5**</td>
-
-<td class="borderbottomcellboarder" style="width: 45%">**Duplicate:**  
-
-Has the vulnerability already been assigned a CVE ID by you or does it already exist in the CVE List?</td>
-
-<td class="borderbottomcellboarder" style="width: 35%">  
+  
 
 **Yes:** USE the existing CVE ID
 
@@ -983,27 +700,15 @@ Has the vulnerability already been assigned a CVE ID by you or does it already e
 
 **Not sure:** ASSIGN a CVE ID
 
-</td>
+.whiteFont { color: #FFFFFF; } .tableborder { border: 1px solid black; border-collapse:collapse; } .cellboarder { border: 1px thin solid #000000; } .cellboarderright { border-right-style: 1px solid; } .cellboarderright2 { border-left-style: solid; border-left-width: 1px; border-right-style: solid; border-right-width: 1px; } .borderbottom { border-bottom-style: solid; border-bottom-width: 1px; } .borderbottomcellboarder { border-bottom-style: solid; border-bottom-width: 1px; border-right-style:solid; border-right-width:1px; border-collapse:collapse; }
 
-</tr>
-
-</tbody>
-
-</table>
-
-<style type="text/css">.whiteFont { color: #FFFFFF; } .tableborder { border: 1px solid black; border-collapse:collapse; } .cellboarder { border: 1px thin solid #000000; } .cellboarderright { border-right-style: 1px solid; } .cellboarderright2 { border-left-style: solid; border-left-width: 1px; border-right-style: solid; border-right-width: 1px; } .borderbottom { border-bottom-style: solid; border-bottom-width: 1px; } .borderbottomcellboarder { border-bottom-style: solid; border-bottom-width: 1px; border-right-style:solid; border-right-width:1px; border-collapse:collapse; }</style>
-
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Appendix_D" id="Appendix_D"></a>
+[Back to top](#top)
 
 ### Appendix D: Terms of Use
 
 See [Terms of Use](https://cve.mitre.org/about/termsofuse.html).
 
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Appendix_E" id="Appendix_E"></a>
+[Back to top](#top)
 
 ### Appendix E: Process to Correct Counting Issues or Update CVE Entries
 
@@ -1030,15 +735,11 @@ These updates may be initiated by:
 
 As part of a CNA’s vulnerability management process, a CNA can choose whether they wish to vet any updates to CVE IDs that they assigned. The process for communicating those changes between CNAs and requesters will vary depending on the CNA. It is not a requirement that CNAs must vet changes to their CNA Entries.
 
-<a id="Appendix_E_reject" name="Appendix_E_reject"></a>
-
 #### Reject: A CVE ID Should Not Have Been Assigned
 
 There are many reasons why a CVE ID may be rejected, such as: further research determines the issue is not a vulnerability; a typo in an advisory causes the wrong CVE ID to be used; or the researcher decides to keep the vulnerability private.
 
 In these instances and others, the description for the CVE Entry is updated to reflect that the CVE ID has been REJECTED and provides the reason for the rejection.
-
-<a id="Appendix_E_merge" name="Appendix_E_merge"></a>
 
 #### Merge: Multiple CVE IDs Assigned to One Vulnerability
 
@@ -1057,8 +758,6 @@ The following criteria is used to select which identifier will be associated wit
 
 Note that the process described above is reserved for cases where the CVE IDs have clearly been assigned to the same vulnerability. If there is insufficient information to decide, the description of the CVE Entries may be changed to indicate that they may be the same. For example, a NOTE sentence such as “This may be the same as < the-other-CVE-ID >” or “This may overlap < the-other-CVE-ID >” may be used.
 
-<a id="Appendix_E_split" name="Appendix_E_split"></a>
-
 #### Split: A Single CVE ID is Assigned when More than One is Required
 
 The process for splitting a CVE Entry into multiple CVE Entries is as follows:
@@ -1075,8 +774,6 @@ The following criteria is used to select which vulnerability is selected to be a
 3.  If the risks are roughly the same, CHOOSE THE VULNERABILITY WITH BROADEST RANGE OF AFFECTED VERSIONS.
 4.  If the vulnerabilities affect the same versions, CHOOSE THE VULNERABILITY THAT WAS DESCRIBED FIRST IN INITIAL PUBLICATION.
 
-<a id="Appendix_E_dispute" name="Appendix_E_dispute"></a>
-
 #### Dispute: Validity of the Vulnerability is Questioned
 
 Not everyone shares the same definition of a vulnerability. One person’s vulnerability is another person’s security hardening opportunity, and another person’s intended functionality. How does CVE deal with these differing opinions?
@@ -1085,103 +782,57 @@ When an authoritative source disputes the validity of the vulnerability, “** D
 
 Note that marking a CVE Entry as disputed is different from rejecting a CVE Entry. Rejections are made because the issue is clearly not a vulnerability (it fails CNT2), the vulnerability is not made public (it fails INC2), the product isn't customer controlled (it fails INC3), or the product is not generally available (it fails INC4). Entries are disputed when there are differing opinions about it being a vulnerability or regarding the specific details of the vulnerability itself. The more binary cases of INC2, INC3, and INC4 are not things that can be disputed, per se. They either are or are not true.
 
-<a id="Appendix_E_partial_duplicate" name="Appendix_E_partial_duplicate"></a>
-
 #### Partial Duplicate
 
 There are cases where two CVE IDs overlap in what software or hardware is affected by the same vulnerabilities. An example of this would be if CVE-2017-nnnn1 references Product1 versions 1.0, 2.0, and 3.0 and CVE-2017-nnnn2 is assigned to the same vulnerability and references Product1 versions 3.0, 4.0, and 5.0.
 
 In this situation, use the following process.
 
-1.  PREFER THE MOST COMMONLY REFERENCED IDENTIFIER. This is roughly gauged by searching for all affected identifiers on a search engine and comparing results. In our example above, CVE-2017-nnnn1 is used more often than CVE-2017-nnnn2\. Therefore, CVE-2017-nnnn1 would reference versions 1.0, 2.0, and 3.0, and CVE-2017-nnnn2 would be changed to only reference versions 4.0 and 5.0\. In both CVE Entries, a note should be added to the effect "This CVE Entry is related to [the other]."
-2.  If the usage numbers of identifiers are about the same, then CHOOSE THE IDENTIFIER USED BY THE MOST AUTHORITATIVE SOURCE. The "most authoritative source" is roughly prioritized as: vendor, coordinator, researcher. Again, if CVE-2017-nnnn1 is used by the most authoritative source, CVE-2017-nnnn1 would reference versions 1.0, 2.0, and 3.0, and CVE-2017-nnnn2 would be changed to only reference versions 4.0 and 5.0\. In both CVE Entries, a note should be added to the effect "This CVE Entry is related to [the other]."
-3.  If the identifiers have the same level of authority, then CHOOSE THE IDENTIFIER THAT HAS BEEN PUBLIC FOR THE LONGEST PERIOD OF TIME. Again, if CVE-2017-nnnn1 has been public for the longest period, CVE-2017-nnnn1 would reference versions 1.0, 2.0, and 3.0, and CVE-2017-nnnn2 would be changed to only reference versions 4.0 and 5.0\. In both CVE Entries, a note should be added to the effect "This CVE Entry is related to [the other]."
-4.  If the identifiers have been public for the same amount of time, then CHOOSE THE IDENTIFIER WITH THE SMALLEST NUMERIC PORTION. Since CVE-2017-nnnn1 uses a smaller numeric portion, CVE-2017-nnnn1 would reference versions 1.0, 2.0, and 3.0, and CVE-2017-nnnn2 would be changed to only reference versions 4.0 and 5.0\. In both CVE Entries, a note should be added to the effect "This CVE Entry is related to [the other]."
-5.  If there are any disputes after this, CHOOSE THE IDENTIFIER THAT WAS POPULATED IN THE CVE LIST THE EARLIEST. Assuming CVE-2017-nnnn1 was populated earliest, CVE-2017-nnnn1 would reference versions 1.0, 2.0, and 3.0, and CVE-2017-nnnn2 would be changed to only reference versions 4.0 and 5.0\. In both CVE Entries, a note should be added to the effect "This CVE Entry is related to [the other]."
+1.  PREFER THE MOST COMMONLY REFERENCED IDENTIFIER. This is roughly gauged by searching for all affected identifiers on a search engine and comparing results. In our example above, CVE-2017-nnnn1 is used more often than CVE-2017-nnnn2. Therefore, CVE-2017-nnnn1 would reference versions 1.0, 2.0, and 3.0, and CVE-2017-nnnn2 would be changed to only reference versions 4.0 and 5.0. In both CVE Entries, a note should be added to the effect "This CVE Entry is related to \[the other\]."
+2.  If the usage numbers of identifiers are about the same, then CHOOSE THE IDENTIFIER USED BY THE MOST AUTHORITATIVE SOURCE. The "most authoritative source" is roughly prioritized as: vendor, coordinator, researcher. Again, if CVE-2017-nnnn1 is used by the most authoritative source, CVE-2017-nnnn1 would reference versions 1.0, 2.0, and 3.0, and CVE-2017-nnnn2 would be changed to only reference versions 4.0 and 5.0. In both CVE Entries, a note should be added to the effect "This CVE Entry is related to \[the other\]."
+3.  If the identifiers have the same level of authority, then CHOOSE THE IDENTIFIER THAT HAS BEEN PUBLIC FOR THE LONGEST PERIOD OF TIME. Again, if CVE-2017-nnnn1 has been public for the longest period, CVE-2017-nnnn1 would reference versions 1.0, 2.0, and 3.0, and CVE-2017-nnnn2 would be changed to only reference versions 4.0 and 5.0. In both CVE Entries, a note should be added to the effect "This CVE Entry is related to \[the other\]."
+4.  If the identifiers have been public for the same amount of time, then CHOOSE THE IDENTIFIER WITH THE SMALLEST NUMERIC PORTION. Since CVE-2017-nnnn1 uses a smaller numeric portion, CVE-2017-nnnn1 would reference versions 1.0, 2.0, and 3.0, and CVE-2017-nnnn2 would be changed to only reference versions 4.0 and 5.0. In both CVE Entries, a note should be added to the effect "This CVE Entry is related to \[the other\]."
+5.  If there are any disputes after this, CHOOSE THE IDENTIFIER THAT WAS POPULATED IN THE CVE LIST THE EARLIEST. Assuming CVE-2017-nnnn1 was populated earliest, CVE-2017-nnnn1 would reference versions 1.0, 2.0, and 3.0, and CVE-2017-nnnn2 would be changed to only reference versions 4.0 and 5.0. In both CVE Entries, a note should be added to the effect "This CVE Entry is related to \[the other\]."
 
 Note that the process described above is reserved for cases where the CVE IDs have clearly been assigned to the same vulnerability. If there is insufficient information to decide, the description of the CVE Entries may be changed to indicate that they may be the same. For example, a NOTE sentence such as "This may be the same as…" or "This may overlap…" may be used.
 
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Appendix_F" id="Appendix_F"></a>
+[Back to top](#top)
 
 ### Appendix F: Acronyms
 
-<table style="width=100%" "text-align="left;&quot;">
+Acronym
 
-<tbody>
+Definition
 
-<tr>
+CERT
 
-<th style="width: 25%">Acronym</th>
+Computer Emergency Response Team
 
-<th style="width: 75%">Definition</th>
+CSIRT
 
-</tr>
+Computer Security Incident Response Team
 
-<tr>
+CNA
 
-<td>CERT</td>
+CVE Numbering Authority
 
-<td>Computer Emergency Response Team</td>
+CVE
 
-</tr>
+Common Vulnerabilities and Exposures
 
-<tr>
+ID
 
-<td>CSIRT</td>
+Identifier
 
-<td>Computer Security Incident Response Team</td>
+ISAC
 
-</tr>
+Information Sharing and Analysis Center
 
-<tr>
+POC
 
-<td>CNA</td>
+Point of Contact
 
-<td>CVE Numbering Authority</td>
-
-</tr>
-
-<tr>
-
-<td>CVE</td>
-
-<td>Common Vulnerabilities and Exposures</td>
-
-</tr>
-
-<tr>
-
-<td>ID</td>
-
-<td>Identifier</td>
-
-</tr>
-
-<tr>
-
-<td>ISAC</td>
-
-<td>Information Sharing and Analysis Center</td>
-
-</tr>
-
-<tr>
-
-<td>POC</td>
-
-<td>Point of Contact</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Appendix_G" id="Appendix_G"></a>
+[Back to top](#top)
 
 ### Appendix G: Quarterly Metrics
 
@@ -1199,16 +850,13 @@ For Root CNAs:
 *   Number of times an issue was escalated to the Root CNA  
     Rationale: How much of a Root CNA’s time is spent dealing with escalations? Does it scale with the number of Sub-CNAs they have? Does it vary between sectors?
 *   Categories of escalated issues and percentage of total:  
-
     *   Dispute
     *   Responsiveness
     *   Misuse of CVERationale: What is the nature of the issues that Root CNAs are addressing, which can inform training, documentation, and process improvement.
 *   List of Sub-CNAs and New Sub-CNAs this quarter  
     Rationale: Forces the periodic update of the full CNA directory.
 
-<div class="backtop noprint">[Back to top](#top)</div>
-
-<a name="Appendix_H" id="Appendix_H"></a>
+[Back to top](#top)
 
 ### Appendix H: Disclosure and Embargo Policies
 
@@ -1227,4 +875,4 @@ Below are some examples of disclosure policies that can be used as a template fo
 *   [NTIA “Early Stage” Coordinated Vulnerability Disclosure Template](https://www.ntia.doc.gov/files/ntia/publications/ntia_vuln_disclosure_early_stage_template.pdf)
 *   [Open Source Responsible Disclosure Framework](https://github.com/bugcrowd/disclosure-policy)
 
-<div class="backtop noprint">[Back to top](#top)</div>
+[Back to top](#top)
