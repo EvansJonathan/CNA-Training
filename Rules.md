@@ -95,7 +95,7 @@ Appendix H. [Disclosure and Embargo Policies](#Appendix_H)
 
 [Back to top](#top)
 
-### 1\. Overview
+### Overview
 
 The Common Vulnerabilities and Exposures (CVE) Program’s primary purpose is to uniquely identify vulnerabilities and to associate specific versions of code bases (e.g., software and shared libraries) to those vulnerabilities. The use of [CVE Entries](https://cve.mitre.org/about/faqs.html#what_is_cve_entry) ensures that two or more parties can confidently refer to a [CVE Identifier (CVE ID)](https://cve.mitre.org/about/faqs.html#what_is_cve_id) when discussing or sharing information about a unique vulnerability. In this way, CVE is fundamental to the vulnerability management infrastructure.
 
