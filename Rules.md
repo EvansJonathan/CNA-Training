@@ -7,7 +7,7 @@ CVE Numbering Authorities (CNA) Rules
 
 ### Table of Contents
 
-1.  [Overview](#1._overview)
+1.  [Overview](#1_overview)
 
 1.1 [CVE Numbering Authorities (CNAs)](#Section_1_1_cnas)
 
